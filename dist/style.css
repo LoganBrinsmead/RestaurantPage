@@ -1,0 +1,51 @@
+/* Home page */
+
+.home {
+    background-image: url('../dist/img/interior.jpg');
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.home-header, .home-introduction {
+    display: flex;
+    color: black;
+    background-color: orange;
+    opacity: 0.6;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 32px;
+}
+
+/* Home page */
+
+/* All pages */
+html {
+    font-family: cursive;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+
+button {
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 12px;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: orange;
+    padding: 12px;
+}
+
+/* All Pages */

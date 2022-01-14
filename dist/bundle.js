@@ -1,1 +1,1 @@
-alert("Hello world. This is a test.");
+document.body.appendChild(alert("Hello world. This is a test."));

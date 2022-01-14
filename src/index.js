@@ -1,3 +1,17 @@
-const test = alert("Hello world. This is a test.");
+import initializeHomePage from './home';
 
-document.querySelector('#content').appendChild(test);
+console.log("test");
+
+initializeHomePage();
+
+document.querySelector('#home').addEventListener('click', () => {
+    initializeHomePage();
+});
+
+// document.querySelector('menu').addEventListener('click', () => {
+//     initializeMenuPage();
+// });
+
+// document.querySelector('#about').addEventListener('click', () => {
+//     initializeAboutPage();
+// });
