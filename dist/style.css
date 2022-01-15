@@ -7,28 +7,83 @@
     flex-grow: 1;
 }
 
-.home-header, .home-introduction {
+.home-intro {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: black;
-    background-color: orange;
+    background-color: rgb(12, 73, 241);
     opacity: 0.6;
     flex-direction: column;
     flex-grow: 1;
     padding: 32px;
+    font-size: 32px;
+    font-weight: bold;
+
+    margin: 144px;
+
+}
+
+.introPicture {
+    border-radius: 360px;
+    opacity: 1;
+
 }
 
 /* Home page */
+
+/* Menu page */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+    padding: 32px;
+    font-size: 32px;
+    font-weight: bold;
+
+    
+    margin: 144px;
+
+}
+
+menuitem {
+    display: flex;
+    flex-direction: row;
+    border: white solid 4px;
+    border-radius: 15px;
+}
+
+.menuPicture {
+    width: 24vh;
+    height: 24vh
+}
+
+/* Menu page */
 
 /* All pages */
 html {
     font-family: cursive;
 }
 
+h1 {
+    font-size: 50px;
+    padding: 30px;
+}
+
 .tabs {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.tabButtons {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: orange;
+    justify-content: space-between;
 }
 
 button {
@@ -44,7 +99,7 @@ footer {
     bottom: 0;
     left: 0;
     opacity: 0.5;
-    background-color: orange;
+    background-color: black;
     padding: 12px;
 }
 
