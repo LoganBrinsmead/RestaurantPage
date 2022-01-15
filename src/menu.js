@@ -3,6 +3,8 @@ import Burger from '../dist/img/MenuItems/burger.jpg';
 import Steak from '../dist/img/MenuItems/steak.jpg';
 import Pizza from '../dist/img/MenuItems/pizza.jpg';
 
+
+
 function backgroundImage() {
     document.body.style.backgroundImage = "url('../dist/img/interior.jpg')";
 }

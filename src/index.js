@@ -1,7 +1,8 @@
 import initializeHomePage from './home';
 import initializeMenuPage from './menu';
 
-console.log("test");
+console.log("Greetings Earthlings");
+
 
 function clearRender() {
     const content = document.getElementById('content');

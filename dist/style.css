@@ -1,27 +1,57 @@
+/* Animations */
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+/* Animations */
+
 /* Home page */
 
 .home {
     background-image: url('../dist/img/interior.jpg');
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+
 }
 
 .home-intro {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 
-    color: black;
-    background-color: rgb(12, 73, 241);
-    opacity: 0.6;
+    color: white;
+    background-color: black;
     flex-direction: column;
-    flex-grow: 1;
-    padding: 32px;
+    padding: 16px 8px;
     font-size: 32px;
     font-weight: bold;
 
-    margin: 144px;
+
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
 
 }
 
@@ -29,6 +59,10 @@
     border-radius: 360px;
     opacity: 1;
 
+}
+
+.chefDescription {
+    font-size: 22px;
 }
 
 /* Home page */
@@ -44,10 +78,6 @@
     padding: 32px;
     font-size: 32px;
     font-weight: bold;
-
-    
-    margin: 144px;
-
 }
 
 menuitem {
@@ -70,37 +100,57 @@ html {
 }
 
 h1 {
-    font-size: 50px;
-    padding: 30px;
+    font-size: 40px;
+    padding-top: 12px;
 }
 
 .tabs {
     text-align: center;
     background-color: black;
     color: white;
-}
 
-.tabButtons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: -33px;
+    margin-bottom: 16px;
 }
 
 button {
-    background-color: royalblue;
-    color: whitesmoke;
+    background-color: black;
+    color: white;
     padding: 12px;
+    font-size: 16px;
+
+    border: 0;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: grey;
+    transition-duration: 0.5s;
+}
+
+
 footer {
-    position: fixed;
+    position: absolute;
     text-align: center;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
     background-color: black;
-    padding: 12px;
+    padding: 4px;
+    margin-bottom: -20px;
+
+    color: white;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1;
+    top: 1;
+    right: 0;
+    left: 0;
+    position: absolute;
 }
 
 /* All Pages */

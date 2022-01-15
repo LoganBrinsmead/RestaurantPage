@@ -21,6 +21,7 @@ function createIntro() {
 
     const chefDescription = document.createElement('p');
     chefDescription.textContent = 'Our Founder and Head Chef, Rordan Gamsey';
+    chefDescription.classList.add('chefDescription');
 
     intro.appendChild(introHeader);
     intro.appendChild(description);
