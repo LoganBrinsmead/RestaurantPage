@@ -12,6 +12,7 @@ function backgroundImage() {
 function createHeader() {
     const header = document.createElement('h1');
     header.textContent = 'Our Menu';
+    header.classList.add('menuHeader');
 
     return header;
 }
@@ -26,11 +27,11 @@ function createPasta() {
     
 
     const pastaTitle = document.createElement('h3');
-    pastaTitle.textContent = "Grotto Pasta........ $23";
+    pastaTitle.textContent = "Grotto Pasta";
     pasta.appendChild(pastaTitle);
 
     const pastaDescription = document.createElement('p');
-    pastaDescription.textContent = 'Genuine Italian pasta from the hills outside my house or something.';
+    pastaDescription.textContent = 'Genuine Italian pasta......... $23';
     pasta.appendChild(pastaDescription);
 
     return pasta;
@@ -45,11 +46,11 @@ function createBurger() {
     burger.appendChild(myBurger);
 
     const burgerTitle = document.createElement('h3');
-    burgerTitle.textContent = 'Gourmet Beef Burger........ $24';
+    burgerTitle.textContent = 'Gourmet Beef Burger';
     burger.appendChild(burgerTitle);
 
     const burgerDescription = document.createElement('p');
-    burgerDescription.textContent = 'Gourmet burger made from real Kobe beef.';
+    burgerDescription.textContent = 'Gourmet burger made from real Kobe beef......... $24';
     burger.appendChild(burgerDescription);
 
     return burger;
@@ -64,11 +65,11 @@ function createSteak() {
     steak.appendChild(mySteak);
 
     const steakTitle = document.createElement('h3');
-    steakTitle.textContent = 'Gourmet Steak........ $47';
+    steakTitle.textContent = 'Gourmet Steak';
     steak.appendChild(steakTitle);
 
     const steakDescription = document.createElement('p');
-    steakDescription.textContent = 'Gourmet steak made from real Kobe beef.';
+    steakDescription.textContent = 'Gourmet steak made from real Kobe beef......... $47';
     steak.appendChild(steakDescription);
 
     return steak;
@@ -84,11 +85,11 @@ function createPizza() {
     pizza.appendChild(myPizza);
 
     const pizzaTitle = document.createElement('h3');
-    pizzaTitle.textContent = 'Gourmet Pizza...... $21';
+    pizzaTitle.textContent = 'Gourmet Pizza';
     pizza.appendChild(pizzaTitle);
 
     const pizzaDescription = document.createElement('p');
-    pizzaDescription.textContent = 'Gourmet Pizza made from top-shelf ingredients';
+    pizzaDescription.textContent = 'Gourmet Pizza made from top-shelf ingredients...... $21';
     pizza.appendChild(pizzaDescription);
 
     return pizza;

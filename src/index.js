@@ -1,10 +1,11 @@
 import initializeHomePage from './home';
 import initializeMenuPage from './menu';
+import initializeAboutPage from './about';
 
 console.log("Greetings Earthlings");
 
 
-function clearRender() {
+function clear() {
     const content = document.getElementById('content');
     while (content.firstChild) {
         content.removeChild(content.lastChild);
@@ -14,15 +15,16 @@ function clearRender() {
 initializeHomePage();
 
 document.querySelector('#home').addEventListener('click', () => {
-    clearRender();
+    clear();
     initializeHomePage();
 });
 
 document.querySelector('#menu').addEventListener('click', () => {
-    clearRender();
+    clear();
     initializeMenuPage();
 });
 
-// document.querySelector('#about').addEventListener('click', () => {
-//     initializeAboutPage();
-// });
+document.querySelector('#about').addEventListener('click', () => {
+    clear();
+    initializeAboutPage();
+});

@@ -13,7 +13,7 @@ function createIntro() {
     introHeader.textContent = 'Welcome to The Grotto';
 
     const description = document.createElement('p');
-    description.textContent = 'Your premier spot for the finest eats in San Francisco';
+    description.textContent = 'Your premier spot for the finest eats in Las Vegas';
 
     const myChef = new Image();
     myChef.src = Chef;
@@ -29,7 +29,6 @@ function createIntro() {
     intro.appendChild(chefDescription);
     return intro;
 }
-
 
 function initializeHomePage() {
     backgroundImage();
